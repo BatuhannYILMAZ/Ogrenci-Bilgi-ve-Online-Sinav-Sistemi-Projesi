@@ -1,0 +1,378 @@
+body {
+    background: #00ADB5;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+
+}
+.main-header {
+    background-color: #222831;
+    position: fixed;
+    padding: 1rem 1.6rem;
+    z-index: 1;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.main-nav {
+    display: inline-block;
+    width: calc(100% - 10rem);
+    text-align: right;
+    font-family: 'Roboto', sans-serif;
+}
+
+.main-nav__items {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.main-nav__item {
+    display: inline-block;
+    margin: 0 1rem;
+}
+
+.deneme {
+    background-color: #393E46;
+}
+
+.deneme a {
+
+    color: white;
+}
+
+#how-it-works {
+    padding: 10px;
+    text-align: center;
+    background-color: #393E46;
+
+}
+
+.container2 {
+    margin: 0 auto;
+    width: 1000px;
+
+
+}
+
+.row i {
+    font-size: 50px;
+}
+
+.row:last-child::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.col-3 {
+    float: left;
+    width: 15%;
+    margin-left: 5px;
+}
+
+a i {
+    color: #393E46;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Dropdown Menu Start*/
+ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+ul.menu {
+    height: 50px;
+}
+
+ul.menu>li {
+    position: relative;
+}
+
+ul.menu>li>a {
+    font-size: 14px;
+    color: white;
+    padding: 0 15px;
+    line-height: 50px;
+}
+
+ul.menu ul {
+    background-color: #393E46;
+    width: 220px;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    opacity: 0;
+    transition: 250ms all;
+    visibility: hidden;
+    text-align: left;
+}
+
+ul.menu ul li a {
+    display: block;
+    padding: 7px 12px;
+    color: white;
+    font-size: 14px;
+}
+
+ul.menu>li:hover ul {
+    opacity: 1;
+    visibility: visible;
+    top: 50px;
+}
+
+.main-nav__item a:hover {
+    color: #AAAAAA;
+}
+
+.main-nav__item:last-child {
+    margin-right: 150px;
+}
+
+/* Dropdown Menu END*/
+/*SLİDE START*/
+.deneme{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    
+    
+}
+.slider{
+    margin-top: 82px;
+    width: 980px;
+    height: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.slides{
+    width: 500%;
+    height: 500px;
+    display: flex;
+}
+
+.slides input{
+    display: none;
+}
+.slide{
+    width: 20%;
+    transition: 2s;
+}
+
+.slide img{
+    width: 980px;
+    height: 500px;
+}
+
+/*css for manual slide navigation*/
+.navigation-manual{
+    position: absolute;
+    width: 980px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.manual-btn{
+    border: 2px solid #00ADB5;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+
+.manual-btn:hover{
+    background:#00ADB5 ;
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+    margin-left: -20%;
+}
+
+#radio3:checked ~ .first{
+    margin-left: -40%;
+}
+
+#radio4:checked ~ .first{
+    margin-left: -60%;
+}
+
+/*css for automatic navigation*/
+
+.navigation-auto{
+    position: absolute;
+    display: flex;
+    width: 980px;
+    justify-content: center;
+    margin-top: 460px;
+}
+
+.navigation-auto div{
+    border: 2px solid #00ADB5;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.navigation-auto div:not(:last-child){
+    margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background: #00ADB5;
+}
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background: #00ADB5;
+}
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background: #00ADB5;
+}
+#radio4:checked ~ .navigation-auto .auto-btn4{
+    background: #00ADB5;
+}
+                        /*SLİDE END*/
+/* Main*/
+.col-3 a {
+    text-decoration: none;
+    color: #222831;
+}
+
+.col-3 a:hover {
+    color: #00ADB5;
+
+
+}
+
+.col-3 a i:hover {
+    color: #00ADB5;
+}
+
+/* Main*/
+/*İconlara Gölge Vermeye Çalıştım*/
+.col-3 {
+    background: #edf5f7;
+    padding: 15px 5px;
+    border-radius: 5px;
+    box-shadow: 0px 7px 29px 0px rgba(100, 100, 111, 0.2);
+    transition: box-shadow .6s;
+}
+
+.col-3:hover {
+    box-shadow: 2px 2px rgba(100, 100, 111, 0.5);
+}
+
+/*İconlara Gölge bitiş*/
+/*Footer Start*/
+.wrapper {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #00ADB5;
+}
+
+.icon {
+    width: 65px;
+    height: 65px;
+    border-radius: 65px;
+    background: #fff;
+    margin: 10px;
+    text-align: center;
+    font-size: 25px;
+    line-height: 65px;
+    font-family: sans-serif;
+    overflow: hidden;
+    box-shadow: 5px 10px 20px rgba(150, 150, 150, .3);
+    transition: all .3s ease-out;
+}
+
+.icon:hover {
+    width: 150px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: #fff;
+}
+
+.icon:hover i {
+    color: #fff;
+}
+
+.icon .fa-facebook-f {
+    color: #1A6ED8;
+}
+
+.fb:hover {
+    background: #1A6ED8;
+}
+
+.icon .fa-twitter {
+    color: #1DA1F2;
+}
+
+.twt:hover {
+    background: #1DA1F2;
+}
+
+.icon .fa-linkedin-in {
+    color: #0077B5;
+}
+
+.lnk:hover {
+    background: #0077B5;
+}
+
+.icon .fa-github {
+    color: #000;
+}
+
+.git:hover {
+    background: #000;
+}
+
+.icon .fa-youtube {
+    color: #FE0000;
+}
+
+.yt:hover {
+    background: #FE0000;
+}
+
+.denemee {
+    background-color: #00ADB5;
+}
+
+.denemee p {
+    margin: 0;
+    padding: 15.5px;
+    text-align: center;
+}
+
+hr {
+    margin: 0;
+}
+
+
+/*Footer End*/

@@ -1,0 +1,303 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Lato', sans-serif;
+    overflow: hidden;
+}
+
+i{
+    margin-right: 12px;
+}
+
+.header{
+    background-color: #222831;
+  display: flex;
+}
+
+.main{
+    display: flex;
+}
+/*Navigation bar*/
+
+.navbar{
+
+   background-color:#393E46;
+    width: 300px;
+    height: 883;
+
+}
+
+
+
+.profil{
+    margin-top: 20px;
+    margin-left: 35px;
+   width: 200px;
+   height: 200px;
+   overflow: hidden;
+   border: 5px solid #EEEEEE;
+   border-radius: 50%;
+}
+
+.profil img {
+    width: 100%;
+    height: 100%;
+   
+}
+
+/*Navigation bar SOn*/
+
+
+/*  Sol Açılır Menu  */
+.menu{
+   background-color: #888;
+   width: 300px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.menu ul{
+    display: block;
+    margin: 0px;
+    padding: 0px;
+   
+}
+
+.menu ul li{
+    display: block;
+    list-style: none;
+}
+
+.menu ul li a{
+    color: #EEEEEE;
+    text-decoration: none;
+    font-size: 12px;
+    font-family: Arial;
+    background: #393E46;
+    display: block;
+    padding: 30px;
+    border-bottom: 1px solid #555;
+    
+    
+}
+
+.menu ul li a:hover{
+ 
+    background-color: #EEEEEE;
+    color: #222831;
+   
+    
+}
+
+.menu ul li ul{ 
+  
+    display: none;
+   
+}
+
+.menu ul li:hover ul {
+
+
+    display: block;
+ 
+}
+
+.menu ul li ul li a{
+    padding: 20px 20px 20px 80px;
+    transition:all 0.3s ease-in-out;
+    transition-delay: 0.2s;
+   
+}
+
+.bilgi{
+    margin-left: 50px;
+ 
+}
+
+.bilgi ul li{
+    display: block;
+    list-style: none;
+    color:#EEEEEE;
+
+}   
+/*  Sol Açılır Menu  son */
+
+
+/*Banner*/
+
+.banner {
+    background-color: #222831;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    height: 100px;
+    margin: 0;
+  }
+
+.logo{
+   width: 320px;
+   height: 100px;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+  
+  .logo img {
+    width: 300px;
+    height: 100px;
+  }
+  
+  .ogrenci-bilgileri {
+    position: relative;
+    right: 50px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .ogrenci-bilgileri i{
+    color: #888;
+    margin-right: 20px;
+    font-size: 30px;
+  }
+  .ogrenci-bilgileri img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .ogrenci-no {
+    
+    color: #888;
+    font-size: 20px;
+    font-weight: bold;
+  }
+ 
+/*Banner son*/
+ 
+
+
+/*mesaj kutusu*/
+
+.mesage-button{
+  cursor: pointer;
+  opacity: 0px;
+  text-decoration: none;
+  border: 1px solid #222831;
+  border-radius: 4px;
+    background-color: #222831;
+    position: relative;
+    align-items: center;
+    right: 20px;
+    width: 40px;
+}
+/*mesaj kutusu son*/
+
+  /* Açılır Profil Ekranı */
+  .user-pic{
+   
+    border: 2px solid #222831;
+    cursor: pointer;
+    transition-property: border;
+    transition-duration: 100ms;
+   transition-delay: 250ms;
+  }
+.user-pic:hover{
+
+  border: 2px solid #393E46;
+  
+}
+  .sub-menu-wrap{
+    
+    position: absolute;
+    top: 55px;
+    right: -30px;
+    width: 320px;
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.5s;
+
+  }
+  .sub-menu-wrap.open-menu{
+    max-height: 400px;
+  }
+  .sub-menu{
+   
+    border-radius: 5%;
+    background: #393E46;
+    padding: 20px;
+    margin: 10px;
+
+  }
+ 
+  .uer-info h3{
+    font-weight: 500;
+  }
+  .uer-info h2 {
+    color: #fff;
+  }
+  .uer-info img {
+    width: 60px;
+    border-radius: 50%;
+    margin-right: 15px;
+  }
+  .sub-menu hr{
+    border: 0px;
+    height: 1px;
+    width: 100%;
+    background: #222831;
+    margin: 10px 0 10px;
+  }
+  .sub-menu-link{
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    color: #fff;
+    margin: 12px 0;
+
+  }
+  .sub-menu-link p{
+    width: 100%;
+  }
+  .sub-menu-link i {
+
+    font-size: 30px;
+    color: #fff;
+  }
+  .sub-menu-link span{
+    font-size: 22px;
+    transition: transform 0.5s;
+  }
+
+  .sub-menu-link:hover span{
+        transform: translateX(5px);
+  }
+  .sub-menu-link:hover p{
+    font-weight: 600;
+  }
+  /* Açılır Profil Ekranı Son */
+
+
+  .content{
+    background-color: #bbb;
+    width: 100%;
+    height:873px;
+}
+.guz {
+
+  width: 600px;
+  background-color: #fff;
+  border: 1px solid #222831;
+ 
+}
+.bahar{
+  width: 600px;
+  border: 1px solid #222831;
+  background-color: #fff;
+
+}
